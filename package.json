@@ -1,29 +1,19 @@
 {
   "type": "module",
-  "name": "webdev-final-server",
+  "name": "omdb-node-server-app-5610-fa22",
   "version": "1.0.0",
-  "description": "Node.js HTTP Web server for the Final Project of Web Dev",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/samuel032khoury/webdev-final-server.git"
-  },
-  "keywords": [
-    "Node",
-    "REST",
-    "Server",
-    "HTTP"
-  ],
-  "author": "Samuel Ji/Kunyang Li/Vita Khan/Ray Eah",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/samuel032khoury/webdev-final-server/issues"
-  },
-  "homepage": "https://github.com/samuel032khoury/webdev-final-server#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^6.7.2",
+    "nodemon": "^2.0.20"
   }
 }
