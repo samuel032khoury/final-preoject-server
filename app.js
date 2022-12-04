@@ -19,7 +19,8 @@ const options = {
     family: 4
 }
 
-mongoose.connect('mongodb://localhost:27017/cs4550-fa22', options)
+const uri ="mongodb+srv://teamten:teamten@yelpclone.uq33odm.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(uri)
 
 const app = express();
 app.use(cors({
