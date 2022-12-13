@@ -15,15 +15,5 @@ export const deleteReview = async (reviewID) => {
   return status;
 };
 
-
-// export const updateReview = async (reviewID, reviewUpdates) => {
-//     const status = await reviewsModel.updateOne(
-//         {_id: reviewID},
-//         {$set: reviewUpdates}
-//     );
-//     return status;
-//   };
-
-
-export const updateReview = (tid, tuit) =>
-    reviewsModel.updateOne({ _id: tid }, { $set: tuit });
+export const updateReview = (reviewID, review) =>
+  reviewsModel.updateOne({ _id: tid }, { $set: review });
