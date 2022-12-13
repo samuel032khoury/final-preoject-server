@@ -16,4 +16,4 @@ export const deleteReview = async (reviewID) => {
 };
 
 export const updateReview = (reviewID, review) =>
-  reviewsModel.updateOne({ _id: tid }, { $set: review });
+  reviewsModel.updateOne({ _id: reviewID }, { $set: review });
