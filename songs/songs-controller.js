@@ -25,3 +25,5 @@ const SongsController = (app) => {
   app.put   ('/songs/:sid', updateSong)
   app.delete('/songs/:sid', deleteSong)
 }
+
+export default SongsController;
