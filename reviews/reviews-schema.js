@@ -2,8 +2,9 @@ import mongoose from "mongoose";
 
 const reviewsSchema = mongoose.Schema({
     review: String,
-    songID: String,
+    songID: { type: String, ref: "songsModel"},
     username: String,
+    createAt: Date,
     author: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'UserModel'

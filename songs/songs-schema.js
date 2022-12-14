@@ -1,11 +1,13 @@
 import mongoose from "mongoose";
 
 const songsSchema = mongoose.Schema({
-  title: {type: String, required: true},
-  likes: {type: Number, default: 0},
-  liked: {type: Boolean, default: false},
-  rating: String,
-  genre: {type: String}
+  id: { type: String, unique: true, required: true},
+  popularity: Number,
+  duration_ms: Number,
+  artist: String,
+  album: String,
+  name: String,
+  image: String,
 }, {collection: 'songs'})
 
 export default songsSchema
