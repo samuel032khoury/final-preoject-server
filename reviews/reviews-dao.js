@@ -18,7 +18,7 @@ export const updateReview = (reviewID, review) =>
   reviewsModel.updateOne({ _id: reviewID }, {createAt: 0}, { $set: review });
 
 
-export const findLatestReviews = async () => { 
-    const result = await reviewsModel.find().sort({"createAt": -1}).limit(10).exec()
+export const findReviews = async () => {
+    const result = await reviewsModel.find().sort({"createAt": -1})
     return result
 }
