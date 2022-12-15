@@ -15,8 +15,8 @@ const UsersController = (app) => {
         res.json(actualUser)
     }
     const updateUser = async (req, res) => {
-        const uid = req.params.uid;
-        const updates = req.body;
+        //const uid = req.params.uid;
+        const {uid, updates} = req.body;
         const status = await userDao.updateUser(uid, updates)
         res.json(status)
     }
