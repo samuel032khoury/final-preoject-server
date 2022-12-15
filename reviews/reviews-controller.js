@@ -28,14 +28,14 @@ const ReviewsController = (app) => {
     res.json(status);
   };
 
-  const findLastesReviews = async (req, res) => {
-    const reviews = await dao.findLatestReviews()
+  const findReviews = async (req, res) => {
+    const reviews = await dao.findReviews()
     res.json(reviews)
   }
 
   app.post("/api/reviews", createReview);
   app.get("/api/song/:songID/reviews", findReviewsBySong);
-  app.get("/api/reviews", findLastesReviews)
+  app.get("/api/reviews", findReviews)
   app.post("/api/reviews/delete/:reviewID", deleteReview);
   app.post("/api/reviews/update/:reviewID", updateReview);
   
